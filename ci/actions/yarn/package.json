@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "async-foreach": "^0.1.3"
+  }
+}
