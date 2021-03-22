@@ -8,6 +8,4 @@ SCAN_FOLDER=$1
 
 echo "Starting license_finder in folder ${SCAN_FOLDER}"
 
-cd ${SCAN_FOLDER}
-
-license_finder action_items --enabled-package-managers=yarn
+bash -lc "cd /LicenseFinder && bundle config set no-cache 'true' && bundle exec license_finder action_items --enabled-package-managers=yarn --project-path=${SCAN_FOLDER}"
