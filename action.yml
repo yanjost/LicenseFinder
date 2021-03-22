@@ -1,5 +1,10 @@
 name: 'Run Pivotal License Finder'
 description: 'Check licenses'
+inputs:
+  folder:
+    description: 'Folder to scan'
+    required: true
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
