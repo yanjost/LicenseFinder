@@ -1,0 +1,5 @@
+name: 'Run Pivotal License Finder'
+description: 'Check licenses'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
